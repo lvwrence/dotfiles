@@ -5,4 +5,5 @@ lawrence's shell, vim, git, brew config files and other stuff
 `git clone git@github.com:lvwrence/dotfiles.git ~/dotfiles`
 
 ## install homebrew formulas and apps
-`~/dotfiles/Brewfile`
+`~/dotfiles/brew.sh`
+`~/dotfiles/brew-cask.sh`
