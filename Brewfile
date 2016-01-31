@@ -1,4 +1,5 @@
 # brew
+brew install z
 brew install task
 brew install vim --HEAD --override-system-vi --with-lua --with-tcl --with-client-server --with-mzscheme --with-luajit
 brew install ctags
