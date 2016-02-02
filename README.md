@@ -16,5 +16,7 @@ lawrence's shell, vim, git, brew config files and other stuff
 
 todos:
 [ ] git hooks
+
 [ ] vim install
+
 [ ] zsh config
