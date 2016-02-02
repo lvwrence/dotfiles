@@ -1,0 +1,56 @@
+[alias]
+    c = commit -am
+    up = pull
+    p = push
+    s = status -s
+    sclone = clone --depth=1
+    df = diff --color --color-words --abbrev
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    co = checkout
+
+    # Show the diff between the latest commit and the current state
+    d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+
+    reup = rebase-update
+
+[color]
+    ui = always
+
+[core]
+    excludesfile = ~/dotfiles/git/gitignore
+    # insanely beautiful diffs
+    pager = diff-highlight | diff-so-fancy | less -r
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    commit = green bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
+[merge]
+    tool = opendiff
+
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = "red bold 52"
+    newNormal = "green bold"
+    newHighlight = "green bold 22"
+
+# push easily. http://stackoverflow.com/a/23918418/89484
+[push]
+    default = current
+
+[init]
+    templatedir = ~/dotfiles/git/template

@@ -6,3 +6,6 @@ lawrence's shell, vim, git, brew config files and other stuff
 
 ## install homebrew formulas and apps
 `~/dotfiles/Brewfile`
+
+## install git config and hooks
+`ln -s ~/dotfiles/git/gitconfig ~/.gitconfig`
