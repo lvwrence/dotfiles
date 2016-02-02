@@ -54,3 +54,6 @@
 
 [init]
     templatedir = ~/dotfiles/git/template
+[user]
+	name = Lawrence Wu
+	email = lawrence@lawrencewu.me
