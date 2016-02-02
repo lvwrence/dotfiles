@@ -13,3 +13,8 @@ lawrence's shell, vim, git, brew config files and other stuff
 
 ## install git config and hooks
 `ln -s ~/dotfiles/git/gitconfig ~/.gitconfig`
+
+todos:
+[ ] git hooks
+[ ] vim install
+[ ] zsh config
