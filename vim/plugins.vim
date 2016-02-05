@@ -17,5 +17,4 @@ Plug 'https://github.com/junegunn/goyo.vim'
 Plug 'https://github.com/sheerun/vim-polyglot.git'
 Plug 'https://github.com/sjl/gundo.vim'
 Plug 'https://github.com/majutsushi/tagbar'
-Plug 'https://github.com/Valloric/YouCompleteMe', { 'do': '~/.vim/plugged/YouCompleteMe/install.py --clang-completer --tern-completer'}
 call plug#end()
