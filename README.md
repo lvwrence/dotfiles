@@ -11,6 +11,9 @@ lawrence's shell, vim, git, brew config files and other stuff
 ## brew apps
 `cd ~/dotfiles && brew bundle`
 
+## install zsh config
+`ln -s ~/dotfiles/zshrc ~/.zshrc`
+
 ## install git config and hooks
 `ln -s ~/dotfiles/git/gitconfig ~/.gitconfig`
 
