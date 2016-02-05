@@ -10,10 +10,16 @@ lawrence's shell, vim, git, brew config files and other stuff
 
 ## install homebrew formulas and apps
 `~/dotfiles/brew.sh`
+
 `~/dotfiles/brew-cask.sh`
 
 ## install git config and hooks
 `ln -s ~/dotfiles/git/gitconfig ~/.gitconfig`
+
+## install vim config
+`ln -s ~/dotfiles/vim ~/.vim`
+
+`vim +PlugInstall +qall`
 
 todos:
 

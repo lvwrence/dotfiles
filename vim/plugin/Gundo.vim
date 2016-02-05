@@ -1,0 +1,1 @@
+nnoremap U :GundoToggle<CR>
