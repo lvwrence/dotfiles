@@ -16,7 +16,6 @@ alias ls='ls -G'
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=$PATH:$HOME/dotfiles/bin
 
-
 # plugins
 source "$(brew --prefix)/share/antibody.zsh"
 antibody bundle djui/alias-tips
@@ -24,7 +23,3 @@ antibody bundle mafredri/zsh-async
 antibody bundle sindresorhus/pure
 antibody bundle zsh-users/zsh-syntax-highlighting
 antibody bundle zsh-users/zsh-completions
-
-# set prompt
-autoload -U promptinit && promptinit
-prompt pure
