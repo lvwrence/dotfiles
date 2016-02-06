@@ -14,6 +14,11 @@ lawrence's shell, vim, git, brew config files and other stuff
 ## install zsh config
 `ln -s ~/dotfiles/zshrc ~/.zshrc`
 
+## install iterm theme
+install the iterm theme under iterm/
+
+install the range mono fonts and use it at 14pt, 1.5 vertical spacing
+
 ## install tmux config
 `ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf`
 
