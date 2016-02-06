@@ -11,6 +11,7 @@ brew 'youtube-dl'
 tap 'getantibody/antibody'
 brew 'antibody'
 
+brew 'ansiweather'
 brew 'docker'
 brew 'docker-compose'
 brew 'ffmpeg'

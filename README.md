@@ -14,6 +14,9 @@ lawrence's shell, vim, git, brew config files and other stuff
 ## install zsh config
 `ln -s ~/dotfiles/zshrc ~/.zshrc`
 
+### installing ansiweather
+`ln -s ~/dotfiles/ansiweather/ansiweatherrc .ansiweatherrc`
+
 ## install iterm theme
 install the iterm theme under iterm/
 
