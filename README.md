@@ -14,6 +14,9 @@ lawrence's shell, vim, git, brew config files and other stuff
 ## install zsh config
 `ln -s ~/dotfiles/zshrc ~/.zshrc`
 
+## install tmux config
+`ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf`
+
 ## install git config and hooks
 `ln -s ~/dotfiles/git/gitconfig ~/.gitconfig`
 
@@ -23,7 +26,5 @@ lawrence's shell, vim, git, brew config files and other stuff
 `vim +PlugInstall +qall`
 
 todos:
-
 - [ ] git hooks
-- [ ] zsh config
-- [ ] tmux config
+- [ ] more aliases
