@@ -24,3 +24,4 @@ antibody bundle sindresorhus/pure
 antibody bundle zsh-users/zsh-syntax-highlighting
 antibody bundle zsh-users/zsh-completions
 antibody bundle fcambus/ansiweather
+antibody bundle wbinglee/zsh-wakatime

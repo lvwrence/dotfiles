@@ -31,6 +31,7 @@ brew 'task'
 brew 'tmux'
 brew 'unrar'
 brew 'vim', args: ['HEAD', 'override-system-vi']
+brew 'wakatime-cli'
 brew 'wget'
 brew 'zsh'
 brew 'z'
