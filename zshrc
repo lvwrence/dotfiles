@@ -2,7 +2,13 @@ export EDITOR='vim'
 alias y='ssh -A dev18-devc'
 alias p='ssh -A photoexp5-uswest1cdevc'
 alias p1='ssh -A photoexp1-uswest1cdevc'
-alias ls='ls -G'
+
+if [ "$(uname)" == "Darwin" ]; then
+    alias ls='ls -G'
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    alias ls='ls --color=auto'
+fi
+
 
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=$PATH:$HOME/dotfiles/bin
