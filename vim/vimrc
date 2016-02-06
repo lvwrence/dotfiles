@@ -2,6 +2,9 @@ set nocompatible " Use Vim settings rather than Vi settings.
 let mapleader = "," " Set leader key to comma.
 
 " Options.
+syntax enable " Switch syntax highlighting on.
+set background=dark
+colorscheme material-theme " Set colorscheme
 set wildignore=*.swp,*.bak,*.pyc,*.class,*.p,*~ " Ignore compiled files and other unnecessary stuff
 set backspace=indent,eol,start " Make backspace behave properly.
 set ruler " Always show current position.
@@ -15,8 +18,6 @@ set smarttab " Be smart when using tabs.
 set autoread " Set to auto read when a file is changed from the outside.
 filetype plugin indent on " Turn on filetype plugin and indent autodetection.
 set autowrite " Automatically write before running commands.
-syntax enable " Switch syntax highlighting on.
-colorscheme hybrid_reverse " Set colorscheme
 set number " Display line numbers.
 set title " Make xterm inherit title from vim.
 set laststatus=2 " Always show status line.
