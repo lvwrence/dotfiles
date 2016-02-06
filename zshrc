@@ -25,7 +25,6 @@ antibody bundle zsh-users/zsh-syntax-highlighting
 antibody bundle zsh-users/zsh-completions
 antibody bundle tarruda/zsh-autosuggestions
 antibody bundle fcambus/ansiweather
-antibody bundle wbinglee/zsh-wakatime
 
 zle-line-init() {
     zle autosuggest-start
