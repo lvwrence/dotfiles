@@ -5,5 +5,4 @@
 #
 # My special commit :)))))))))))))
 
-echo 'hello'
 git commit --verbose
