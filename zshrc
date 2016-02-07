@@ -32,3 +32,17 @@ zle-line-init() {
     zle autosuggest-start
 }
 zle -N zle-line-init
+
+# The following lines were added by compinstall
+zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' matcher-list ''
+zstyle ':completion:*' max-errors 3 not-numeric
+zstyle ':completion:*' menu select=1
+zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
+zstyle ':completion:*' verbose true
+zstyle :compinstall filename '/Users/lawrence/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
