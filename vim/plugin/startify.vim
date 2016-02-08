@@ -6,12 +6,10 @@ let g:startify_relative_path          = 1
 let g:startify_change_to_dir          = 1
 
 let g:startify_list_order = [
-  \ ['   LRU:'],
-  \ 'files',
   \ ['   LRU within this dir:'],
   \ 'dir',
-  \ ['   Bookmarks:'],
-  \ 'bookmarks',
+  \ ['   LRU:'],
+  \ 'files',
   \ ]
 
 let g:startify_skiplist = [ 'COMMIT_EDITMSG' ]

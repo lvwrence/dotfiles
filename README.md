@@ -14,6 +14,17 @@ lawrence's shell, vim, git, brew config files and other stuff
 ## install zsh config
 `ln -s ~/dotfiles/zshrc ~/.zshrc`
 
+### installing ansiweather
+`ln -s ~/dotfiles/ansiweather/ansiweatherrc .ansiweatherrc`
+
+## install iterm theme
+install the iterm theme under iterm/
+
+install the range mono fonts and use it at 14pt, 1.5 vertical spacing
+
+## install tmux config
+`ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf`
+
 ## install git config and hooks
 `ln -s ~/dotfiles/git/gitconfig ~/.gitconfig`
 
@@ -23,7 +34,5 @@ lawrence's shell, vim, git, brew config files and other stuff
 `vim +PlugInstall +qall`
 
 todos:
-
 - [ ] git hooks
-- [ ] zsh config
-- [ ] tmux config
+- [ ] more aliases

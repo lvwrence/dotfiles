@@ -1,6 +1,14 @@
 set nocompatible " Use Vim settings rather than Vi settings.
 let mapleader = "," " Set leader key to comma.
 
+" Theme settings.
+syntax enable " Switch syntax highlighting on.
+let g:hybrid_custom_term_colors = 1
+let g:hybrid_reduced_contrast = 1 " Remove this line if using the default palette.
+set background=dark
+colorscheme hybrid " Set colorscheme
+
+
 " Options.
 set wildignore=*.swp,*.bak,*.pyc,*.class,*.p,*~ " Ignore compiled files and other unnecessary stuff
 set backspace=indent,eol,start " Make backspace behave properly.
@@ -15,14 +23,11 @@ set smarttab " Be smart when using tabs.
 set autoread " Set to auto read when a file is changed from the outside.
 filetype plugin indent on " Turn on filetype plugin and indent autodetection.
 set autowrite " Automatically write before running commands.
-syntax enable " Switch syntax highlighting on.
-colorscheme hybrid_reverse " Set colorscheme
 set number " Display line numbers.
 set title " Make xterm inherit title from vim.
 set laststatus=2 " Always show status line.
 set hidden " Hide buffers instead of closing them (not be forced to write/undo changes when opening a new file)
 set nowrap " Disable line wrapping.
-set cursorline " Highlight current line
 set lazyredraw " Redraw only when we need to
 let g:netrw_dirhistmax = 0 " Prevent writing junk files.
 autocmd User Startified setlocal buftype=
@@ -35,10 +40,6 @@ set noswapfile
 " Set undo and history limit.
 set undolevels=1000
 set history=1000
-
-" Set colorcoloumn for 100-char limit.
-highlight ColorColumn guibg=firebrick
-set colorcolumn=100
 
 " 1 tab == 4 spaces.
 set shiftwidth=4
