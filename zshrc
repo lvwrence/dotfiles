@@ -8,15 +8,21 @@ export HISTFILE=~/.zhistory
 setopt inc_append_history
 
 export EDITOR='vim'
-alias y='ssh -A dev18-devc'
-alias p='ssh -A photoexp5-uswest1cdevc'
-alias p1='ssh -A photoexp1-uswest1cdevc'
-alias ls='ls -G'
 
 # disable log builtin so we can use my version
 disable log
 export PATH=$HOME/dotfiles/bin:$PATH
 export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=$PATH:$HOME/caffe/build/tools
+
+export PATH="$HOME/.linuxbrew/bin:$PATH"
+export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/lib
+export PYTHONPATH=/nail/home/lawrence/caffe/python:$PYTHONPATH
+export PYTHONPATH=~/caffe/python:$PYTHONPATH
+export PYTHONPATH=~/photo_classification:$PYTHONPATH
 
 # plugins
 source "$(brew --prefix)/share/antibody.zsh"
@@ -26,7 +32,6 @@ antibody bundle sindresorhus/pure
 antibody bundle zsh-users/zsh-syntax-highlighting
 antibody bundle zsh-users/zsh-completions
 antibody bundle tarruda/zsh-autosuggestions
-antibody bundle fcambus/ansiweather
 
 zle-line-init() {
     zle autosuggest-start
@@ -46,3 +51,5 @@ zstyle :compinstall filename '/Users/lawrence/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+source ~/dotfiles/aliases

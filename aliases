@@ -1,0 +1,7 @@
+alias y='ssh -A dev18-devc'
+alias p='ssh -A photoexp5-uswest1cdevc'
+alias p1='ssh -A photoexp1-uswest1cdevc'
+alias ls='ls --color=auto'
+alias l='ls -laxoh'
+alias t='tmux'
+alias g='git'
