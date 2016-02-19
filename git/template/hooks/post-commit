@@ -1,1 +1,1 @@
-echo 'hello'
+curl -X POST https://lawrencewu.herokuapp.com/
