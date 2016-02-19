@@ -68,6 +68,8 @@ cask 'transmission'
 cask 'spectacle'
 cask 'vlc'
 
+cask 'java'
+cask 'android-studio'
 cask 'betterzipql'
 cask 'qlcolorcode'
 cask 'qlimagesize'
