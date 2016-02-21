@@ -4,6 +4,7 @@ alias p1='ssh -A photoexp1-uswest1cdevc'
 alias l='ls -laxoh'
 alias t='tmux'
 alias g='git'
+alias ..='cd ..'
 
 if [ "$(uname)" '==' "Darwin" ]; then
     alias ls='ls -G'
