@@ -31,5 +31,5 @@ install the range mono fonts and use it at 14pt, 1.5 vertical spacing
 `vim +PlugInstall +qall`
 
 todos:
-- [ ] git hooks
 - [ ] more aliases
+- [ ] auto async update
