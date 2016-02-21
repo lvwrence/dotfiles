@@ -12,8 +12,6 @@ alias y='ssh -A dev18-devc'
 alias p='ssh -A photoexp5-uswest1cdevc'
 alias p1='ssh -A photoexp1-uswest1cdevc'
 
-alias ls='ls -G'
-
 # disable log builtin so we can use my version
 disable log
 export PATH=$HOME/dotfiles/bin:$PATH
