@@ -61,4 +61,3 @@ let javaScript_fold=1
 " Load plugins and mappings.
 source ~/dotfiles/vim/mappings.vim
 source ~/dotfiles/vim/plugins.vim
-source ~/dotfiles/vim/startup.vim
