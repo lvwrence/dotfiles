@@ -6,6 +6,8 @@ export SAVEHIST=1000000
 export HISTFILE=~/.zhistory
 # append command to history file once executed
 setopt inc_append_history
+setopt HIST_IGNORE_DUPS
+setopt EXTENDED_HISTORY
 
 export EDITOR='vim'
 alias y='ssh -A dev18-devc'
