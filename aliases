@@ -1,3 +1,9 @@
+if [ "$(uname)" '==' "Darwin" ]; then
+    alias ls='ls -G'
+elif [ "$(expr substr $(uname -s) 1 5)" '==' "Linux" ]; then
+    alias ls='ls --color=auto'
+fi
+
 alias y='ssh -A dev18-devc'
 alias p='ssh -A photoexp5-uswest1cdevc'
 alias p1='ssh -A photoexp1-uswest1cdevc'
@@ -5,9 +11,3 @@ alias l='ls -laxoh'
 alias t='tmux'
 alias g='git'
 alias ..='cd ..'
-
-if [ "$(uname)" '==' "Darwin" ]; then
-    alias ls='ls -G'
-elif [ "$(expr substr $(uname -s) 1 5)" '==' "Linux" ]; then
-    alias ls='ls --color=auto'
-fi
