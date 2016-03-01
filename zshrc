@@ -8,6 +8,7 @@ export HISTFILE=~/.zhistory
 setopt inc_append_history
 setopt HIST_IGNORE_DUPS
 setopt EXTENDED_HISTORY
+setopt SHARE_HISTORY
 
 export EDITOR='vim'
 alias y='ssh -A dev18-devc'
