@@ -38,6 +38,11 @@ antibody bundle sindresorhus/pure
 antibody bundle zsh-users/zsh-syntax-highlighting
 antibody bundle zsh-users/zsh-completions
 
+# bindings
+bindkey '^[[A' up-line-or-search
+bindkey '^[[B' down-line-or-search
+
+
 # The following lines were added by compinstall
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
 zstyle ':completion:*' list-colors ''
