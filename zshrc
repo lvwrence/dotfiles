@@ -13,6 +13,7 @@ setopt SHARE_HISTORY
 export EDITOR='vim'
 alias y='ssh -A dev18-devc'
 alias p='ssh -A photoexp5-uswest1cdevc'
+alias people='ssh -A people.yelpcorp.com'
 alias p1='ssh -A photoexp1-uswest1cdevc'
 
 # disable log builtin so we can use my version
