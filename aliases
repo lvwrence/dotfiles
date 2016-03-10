@@ -14,3 +14,5 @@ alias l='ls -laxoh'
 alias t='tmux'
 alias g='git'
 alias ..='cd ..'
+alias findmydocker="docker ps | grep lawrence | cut -d ' ' -f 1"
+alias bashmydocker='docker exec -it `findmydocker` bash'
