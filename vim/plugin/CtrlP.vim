@@ -1,4 +1,5 @@
-" CtrlP options.
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_max_files = 0
-let g:ctrlp_use_caching = 1
+let ctrlp_working_path_mode = 'ra'
+let ctrlp_max_files = 0
+let ctrlp_max_depth = 50000
+let ctrlp_use_caching = 1
+let ctrlp_lazy_update = 1
