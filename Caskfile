@@ -1,3 +1,5 @@
+brew cask install smoothmouse
+brew cask install sketch
 brew cask install bartender
 brew cask install alfred
 brew cask install appcleaner

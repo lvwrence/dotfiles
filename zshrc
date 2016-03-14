@@ -18,6 +18,8 @@ alias p1='ssh -A photoexp1-uswest1cdevc'
 
 # disable log builtin so we can use my version
 disable log
+
+# Path stuff
 export PATH=$HOME/dotfiles/bin:$PATH
 export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=$PATH:$HOME/caffe/build/tools
@@ -30,6 +32,9 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/lib
 export PYTHONPATH=/nail/home/lawrence/caffe/python:$PYTHONPATH
 export PYTHONPATH=~/caffe/python:$PYTHONPATH
 export PYTHONPATH=~/photo_classification:$PYTHONPATH
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 # plugins
 source "$(brew --prefix)/share/antibody.zsh"
