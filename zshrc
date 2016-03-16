@@ -13,10 +13,13 @@ setopt SHARE_HISTORY
 export EDITOR='vim'
 alias y='ssh -A dev18-devc'
 alias p='ssh -A photoexp5-uswest1cdevc'
+alias people='ssh -A people.yelpcorp.com'
 alias p1='ssh -A photoexp1-uswest1cdevc'
 
 # disable log builtin so we can use my version
 disable log
+
+# Path stuff
 export PATH=$HOME/dotfiles/bin:$PATH
 export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=$PATH:$HOME/caffe/build/tools
@@ -33,6 +36,9 @@ export PYTHONPATH=~/photo_classification:$PYTHONPATH
 export SPARK_HOME=/nail/home/lawrence/spark-1.4.1-bin-hadoop2.6
 export PYTHONPATH=$SPARK_HOME/python:$SPARK_HOME/python/build:$PYTHONPATH
 export PYTHONPATH=$SPARK_HOME/python/lib/py4j-0.8.2.1-src.zip:$PYTHONPATH
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 # plugins
 source "$(brew --prefix)/share/antibody.zsh"

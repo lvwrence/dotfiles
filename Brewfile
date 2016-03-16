@@ -1,83 +1,29 @@
-cask_args appdir: '/Applications'
-
-tap 'homebrew/bundle'
-tap 'homebrew/versions'
-
-brew 'go'
-brew 'rbenv'
-brew 'youtube-dl'
-
-# antibody
-tap 'getantibody/antibody'
-brew 'antibody'
-
-brew 'docker'
-brew 'docker-compose'
-brew 'ffmpeg'
-brew 'gifsicle'
-brew 'git'
-brew 'graphviz'
-brew 'grc'
-brew 'hub'
-brew 'htop-osx'
-brew 'imagemagick'
-brew 'node'
-brew 'redis'
-brew 'shellcheck'
-brew 'terminal-notifier'
-brew 'the_silver_searcher'
-brew 'task'
-brew 'tmux'
-brew 'unrar'
-brew 'vim', args: ['HEAD', 'override-system-vi']
-brew 'wakatime-cli'
-brew 'wget'
-brew 'zsh'
-brew 'z'
-
-# gnu stuff
-brew 'coreutils', args: ['with-default-names']
-brew 'findutils', args: ['with-default-names']
-brew 'gnu-tar', args: ['with-default-names']
-brew 'gnu-sed', args: ['with-default-names']
-brew 'gawk', args: ['with-default-names']
-brew 'gnutls', args: ['with-default-names']
-brew 'gnu-indent', args: ['with-default-names']
-brew 'gnu-getopt', args: ['with-default-names']
-
-# casks
-tap 'caskroom/cask'
-tap 'caskroom/fonts'
-tap 'caskroom/versions'
-
-cask 'alfred'
-cask 'appcleaner'
-cask 'atom'
-cask 'beamer'
-cask 'caffeine'
-cask 'diffmerge'
-cask 'disk-inventory-x'
-cask 'dropbox'
-cask 'font-hack'
-cask 'google-chrome'
-cask 'iterm2'
-cask 'notational-velocity'
-cask 'simplenote'
-cask 'the-unarchiver'
-cask 'transmission'
-cask 'spectacle'
-cask 'vlc'
-
-cask 'java'
-cask 'android-studio'
-cask 'betterzipql'
-cask 'qlcolorcode'
-cask 'qlimagesize'
-cask 'qlmarkdown'
-cask 'qlprettypatch'
-cask 'qlstephen'
-cask 'quicklook-csv'
-cask 'quicklook-json'
-cask 'webpquicklook'
-cask 'android-studio'
-cask '1password'
+brew install nvm
+brew install watchman
+brew install go
+brew install rbenv
+brew install youtube-dl
+brew install antibody
+brew install docker
+brew install docker-compose
+brew install ffmpeg
+brew install gifsicle
+brew install git
+brew install graphviz
+brew install grc
+brew install hub
+brew install htop-osx
+brew install imagemagick
+brew install node
+brew install redis
+brew install shellcheck
+brew install terminal-notifier
+brew install the_silver_searcher
+brew install task
+brew install tmux
+brew install unrar
+brew install vim
+brew install wakatime-cli
+brew install wget
+brew install zsh
+brew install z
