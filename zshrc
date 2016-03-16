@@ -30,6 +30,10 @@ export PYTHONPATH=/nail/home/lawrence/caffe/python:$PYTHONPATH
 export PYTHONPATH=~/caffe/python:$PYTHONPATH
 export PYTHONPATH=~/photo_classification:$PYTHONPATH
 
+export SPARK_HOME=/nail/home/lawrence/spark-1.4.1-bin-hadoop2.6
+export PYTHONPATH=$SPARK_HOME/python:$SPARK_HOME/python/build:$PYTHONPATH
+export PYTHONPATH=$SPARK_HOME/python/lib/py4j-0.8.2.1-src.zip:$PYTHONPATH
+
 # plugins
 source "$(brew --prefix)/share/antibody.zsh"
 antibody bundle djui/alias-tips

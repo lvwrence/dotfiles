@@ -29,6 +29,7 @@ set laststatus=2 " Always show status line.
 set hidden " Hide buffers instead of closing them (not be forced to write/undo changes when opening a new file)
 set nowrap " Disable line wrapping.
 set lazyredraw " Redraw only when we need to
+set mouse=a " Allow mouse scrolling
 let g:netrw_dirhistmax = 0 " Prevent writing junk files.
 autocmd User Startified setlocal buftype=
 
