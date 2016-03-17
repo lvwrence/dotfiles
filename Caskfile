@@ -1,4 +1,6 @@
 brew cask install sketch
+brew cask install smoothmouse
+brew cask install bartender
 brew cask install alfred
 brew cask install appcleaner
 brew cask install atom
@@ -10,7 +12,6 @@ brew cask install font-hack
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install notational-velocity
-brew cask install simplenote
 brew cask install the-unarchiver
 brew cask install transmission
 brew cask install spectacle
@@ -27,6 +28,6 @@ brew cask install quicklook-csv
 brew cask install quicklook-json
 brew cask install webpquicklook
 brew cask install android-studio
-brew cask install onepassword
+brew cask install 1password
 brew cask install airmail-beta
 brew cask install fantastical

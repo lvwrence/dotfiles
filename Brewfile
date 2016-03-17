@@ -1,3 +1,5 @@
+brew install nvm
+brew install watchman
 brew install go
 brew install rbenv
 brew install youtube-dl
