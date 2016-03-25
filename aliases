@@ -16,11 +16,16 @@ alias stagef='ssh -A stagefservices1'
 alias stageg='ssh -A stagegservices1'
 alias l='ls -laxoh'
 alias t='tmux'
-alias g='git'
 alias ..='cd ..'
 alias history='history 1'
 alias findmydocker="docker ps | grep lawrence | cut -d ' ' -f 1"
 alias bashmydocker='docker exec -it `findmydocker` bash'
+
+alias g='git'
+alias gco='git checkout'
+alias gs='git status'
+alias gb='git branch'
+alias gl='git log'
 
 alias gun='gunicorn app:app'
 alias v='source venv/bin/activate'
