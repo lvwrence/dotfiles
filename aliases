@@ -26,6 +26,7 @@ alias gco='git checkout'
 alias gs='git status'
 alias gb='git branch'
 alias gl='git log'
+alias ga='git add'
 
 alias gun='gunicorn app:app'
 alias v='source venv/bin/activate'
