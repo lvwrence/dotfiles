@@ -11,7 +11,8 @@ lawrence's shell, vim, git, brew config files and other stuff
 ## brew apps
 `cd ~/dotfiles && brew bundle`
 
-## install zsh config
+## install zsh and config
+`chsh -s /bin/zsh`
 `ln -s ~/dotfiles/zshrc ~/.zshrc`
 
 ## install iterm theme
