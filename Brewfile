@@ -1,3 +1,5 @@
+brew install tesseract
+brew install android-platform-tools
 brew install nvm
 brew install watchman
 brew install go
