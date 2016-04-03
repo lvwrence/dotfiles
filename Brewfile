@@ -1,3 +1,5 @@
+brew tap homebrew/science
+brew install opencv
 brew install tesseract
 brew install android-platform-tools
 brew install nvm
