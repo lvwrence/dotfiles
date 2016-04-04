@@ -68,4 +68,4 @@ compinit
 # End of lines added by compinstall
 
 source ~/dotfiles/aliases
-git -C ~/dotfiles pull origin master
+git -C ~/dotfiles pull origin master &
