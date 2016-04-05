@@ -29,6 +29,7 @@ alias gb='git branch'
 alias gl='git log'
 alias ga='git add'
 alias gd='git diff'
+alias gdc='git diff --cached'
 
 alias gun='gunicorn app:app'
 alias v='source venv/bin/activate'
