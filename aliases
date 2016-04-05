@@ -32,3 +32,6 @@ alias gd='git diff'
 
 alias gun='gunicorn app:app'
 alias v='source venv/bin/activate'
+alias freeze='pip freeze > requirements.txt'
+
+alias basketball='cd ~/Dropbox/dev/basketball'
