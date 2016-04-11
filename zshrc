@@ -25,6 +25,7 @@ export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=$PATH:$HOME/caffe/build/tools
 
 export PATH="$HOME/.linuxbrew/bin:$PATH"
+export PATH="$HOME/.linuxbrew/share:$PATH"
 export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
