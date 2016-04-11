@@ -41,7 +41,7 @@ export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
 # plugins
-source "$(brew --prefix)/share/antibody.zsh"
+source <(antibody init)
 antibody bundle djui/alias-tips
 antibody bundle mafredri/zsh-async
 antibody bundle sindresorhus/pure
