@@ -16,7 +16,7 @@ disable log
 
 # Path stuff
 export PATH=$HOME/dotfiles/bin:$PATH
-export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share
 export PATH=$PATH:$HOME/caffe/build/tools
 
 export PATH="$HOME/.linuxbrew/bin:$PATH"
