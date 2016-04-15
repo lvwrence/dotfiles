@@ -9,4 +9,4 @@ added=`git diff --cached --numstat | cut -f 1 | awk '{s+=$1} END {print s}'`
 removed=`git diff --cached --numstat | cut -f 2 | awk '{s+=$1} END {print s}'`
 git commit --verbose
 # todo: check error status
-curl --data "added=${added}&removed=${removed}" http://162.243.145.24/update
+curl --data "added=${added}&removed=${removed}" https://lawrencewu.herokuapp.com/update
