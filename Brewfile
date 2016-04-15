@@ -1,4 +1,5 @@
 brew tap homebrew/science
+brew install mongodb
 brew install opencv
 brew install tesseract
 brew install android-platform-tools

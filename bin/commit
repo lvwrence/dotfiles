@@ -5,5 +5,8 @@
 #
 # My special commit :)))))))))))))
 
+added=`git diff --cached --numstat | cut -f 1 | awk '{s+=$1} END {print s}'`
+removed=`git diff --cached --numstat | cut -f 2 | awk '{s+=$1} END {print s}'`
 git commit --verbose
-curl -X POST http://162.243.145.24/update
+# todo: check error status
+curl --data "added=${added}&removed=${removed}" http://162.243.145.24/update
