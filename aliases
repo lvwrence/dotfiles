@@ -34,7 +34,7 @@ alias gco='git checkout'
 alias gs='git status'
 alias gb='git branch'
 alias gl='log'
-alias ga='git add'
+alias ga='git add -p'
 alias gd='git diff'
 alias gdc='git diff --cached'
 
