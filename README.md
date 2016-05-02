@@ -30,7 +30,3 @@ install the range mono fonts and use it at 14pt, 1.5 vertical spacing
 `ln -s ~/dotfiles/vim ~/.vim`
 
 `vim +PlugInstall +qall`
-
-todos:
-- [ ] more aliases
-- [ ] auto async update
