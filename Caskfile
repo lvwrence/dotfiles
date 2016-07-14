@@ -1,3 +1,4 @@
+brew cask radiant-player
 brew cask install size-up
 brew cask install notational-velocity
 brew cask install sketch

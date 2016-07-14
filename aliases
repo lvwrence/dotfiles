@@ -18,6 +18,8 @@ alias gl='log'
 alias ga='git add -p'
 alias gd='git diff'
 alias gdc='git diff --cached'
+alias gpo='git push origin master'
+alias gph='git push heroku master'
 
 alias gun='gunicorn app:app'
 alias v='source venv/bin/activate'

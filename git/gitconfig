@@ -42,3 +42,7 @@
 [user]
 	name = Lawrence Wu
 	email = lawrence@lawrencewu.me
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
