@@ -16,7 +16,7 @@ alias gs='git status'
 alias gb='git branch'
 alias gl='log'
 alias ga='git add -p'
-alias gd='git diff'
+alias gd='git diff --color --color-words --abbrev'
 alias gdc='git diff --cached'
 
 alias gun='gunicorn app:app'

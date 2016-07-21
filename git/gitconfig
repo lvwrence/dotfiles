@@ -1,37 +1,41 @@
-[color]
-    ui = always
-
 [core]
     excludesfile = ~/dotfiles/git/gitignore
-    # insanely beautiful diffs
-    pager = diff-highlight | diff-so-fancy | less -r
 
-[color "branch"]
-    current = yellow reverse
-    local = yellow
-    remote = green
+[pager]
+    diff = diff-so-fancy | less --tabs=4 -RFX
+    show = diff-so-fancy | less --tabs=4 -RFX
+
+[interactive]
+    diffFilter = "diff-so-fancy"
+
+# so much color
+[color]
+	ui = always
+    pager = true
 
 [color "diff"]
-    meta = yellow bold
-    commit = green bold
-    frag = magenta bold
-    old = red bold
-    new = green bold
-    whitespace = red reverse
-
+	meta = yellow bold
+	commit = green bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = "red bold 52"
+	newNormal = "green bold"
+	newHighlight = "green bold 22"
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
 [color "status"]
-    added = yellow
-    changed = green
-    untracked = cyan
+	added = yellow
+	changed = green
+	untracked = cyan
 
 [merge]
     tool = opendiff
-
-[color "diff-highlight"]
-    oldNormal = red bold
-    oldHighlight = "red bold 52"
-    newNormal = "green bold"
-    newHighlight = "green bold 22"
 
 # push easily. http://stackoverflow.com/a/23918418/89484
 [push]
@@ -41,4 +45,8 @@
     templatedir = ~/dotfiles/git/template
 [user]
 	name = Lawrence Wu
-	email = lawrence@lawrencewu.me
+	email = lawrencew@twitter.com
+[diff]
+	renames = true
+[http]
+	postBuffer = 524288000
