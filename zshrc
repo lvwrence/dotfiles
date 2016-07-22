@@ -20,9 +20,12 @@ export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/
 export PATH=$PATH:$HOME/caffe/build/tools
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/dev/go/bin
+export PATH=$PATH:/usr/local/m-cli
 
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export PATH="$HOME/.linuxbrew/share:$PATH"
+export PATH="$HOME/.gem/ruby/2.0.0/bin:$PATH"
+export PATH="/opt/twitter_mde/bin:$PATH"
 export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
@@ -34,9 +37,8 @@ export PYTHONPATH=~/photo_classification:$PYTHONPATH
 export SPARK_HOME=/nail/home/lawrence/spark-1.4.1-bin-hadoop2.6
 export PYTHONPATH=$SPARK_HOME/python:$SPARK_HOME/python/build:$PYTHONPATH
 export PYTHONPATH=$SPARK_HOME/python/lib/py4j-0.8.2.1-src.zip:$PYTHONPATH
-
 export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+. $(brew --prefix nvm)/nvm.sh
 
 export GOPATH=~/dev/go
 
@@ -64,8 +66,25 @@ zstyle ':completion:*' verbose true
 zstyle :compinstall filename '/Users/lawrence/.zshrc'
 
 autoload -Uz compinit
-compinit
 # End of lines added by compinstall
 
 source ~/dotfiles/aliases
-(update-dotfiles &)
+
+userl()
+{
+  ldapsearch -H ldaps://ldap.local.twitter.com -x -b cn=users,dc=ods,dc=twitter,dc=corp uid=$1
+}
+groupl()
+{
+  ldapsearch -H ldaps://ldap.local.twitter.com -x -b cn=groups,dc=ods,dc=twitter,dc=corp cn=$1
+}
+
+# dottools: add distribution binary directories to PATH
+if [ -r "$HOME/.tools-cache/setup-dottools-path.sh" ]; then
+  . "$HOME/.tools-cache/setup-dottools-path.sh"
+fi
+# Automatically placed at end of file by MDE. To disable this behavior: touch ~/.no-mde-dotfile. Ideally you do not need to do this. Please contactmde-support@twitter.com to discuss long-term alternatives.
+bash /opt/twitter_mde/etc/bash_profile
+export ALLOW_DIRTY=1
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
