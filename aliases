@@ -9,6 +9,8 @@ alias l='ls -laxoh'
 alias t='tmux'
 alias ..='cd ..'
 alias history='history 1'
+alias hgrep='history | grep'
+alias dgrep='grep -r'
 
 alias g='git'
 alias gco='git checkout'
@@ -26,3 +28,4 @@ alias v='source venv/bin/activate'
 alias freeze='pip freeze > requirements.txt'
 
 alias basketball='cd ~/Dropbox/dev/basketball'
+alias eidetic='cd ~/dev/go/src/github.com/heroku/go-getting-started'

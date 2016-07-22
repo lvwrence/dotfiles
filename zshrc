@@ -19,6 +19,7 @@ export PATH=$HOME/dotfiles/bin:$PATH
 export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share
 export PATH=$PATH:$HOME/caffe/build/tools
 export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/dev/go/bin
 
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export PATH="$HOME/.linuxbrew/share:$PATH"
@@ -37,7 +38,7 @@ export PYTHONPATH=$SPARK_HOME/python/lib/py4j-0.8.2.1-src.zip:$PYTHONPATH
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
-export DATABASE_URL=postgres://localhost/jarvis
+export GOPATH=~/dev/go
 
 # plugins
 source <(antibody init)
