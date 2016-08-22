@@ -25,7 +25,6 @@ export PATH=$PATH:/usr/local/m-cli
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export PATH="$HOME/.linuxbrew/share:$PATH"
 export PATH="$HOME/.gem/ruby/2.0.0/bin:$PATH"
-export PATH="/opt/twitter_mde/bin:$PATH"
 export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
