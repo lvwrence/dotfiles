@@ -69,21 +69,6 @@ autoload -Uz compinit
 
 source ~/dotfiles/aliases
 
-userl()
-{
-  ldapsearch -H ldaps://ldap.local.twitter.com -x -b cn=users,dc=ods,dc=twitter,dc=corp uid=$1
-}
-groupl()
-{
-  ldapsearch -H ldaps://ldap.local.twitter.com -x -b cn=groups,dc=ods,dc=twitter,dc=corp cn=$1
-}
-
-# dottools: add distribution binary directories to PATH
-if [ -r "$HOME/.tools-cache/setup-dottools-path.sh" ]; then
-  . "$HOME/.tools-cache/setup-dottools-path.sh"
-fi
-# Automatically placed at end of file by MDE. To disable this behavior: touch ~/.no-mde-dotfile. Ideally you do not need to do this. Please contactmde-support@twitter.com to discuss long-term alternatives.
-bash /opt/twitter_mde/etc/bash_profile
 export ALLOW_DIRTY=1
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
