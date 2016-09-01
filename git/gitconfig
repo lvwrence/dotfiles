@@ -1,34 +1,23 @@
 [core]
     excludesfile = ~/dotfiles/git/gitignore
 
-[pager]
-    diff = diff-so-fancy | less --tabs=4 -RFX
-    show = diff-so-fancy | less --tabs=4 -RFX
-
-[interactive]
-    diffFilter = "diff-so-fancy"
-
 # so much color
 [color]
 	ui = always
     pager = true
+	diff = always
 
 [color "diff"]
 	meta = yellow bold
-	commit = green bold
 	frag = magenta bold
 	old = red bold
-	new = green bold
-	whitespace = red reverse
-[color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = "red bold 52"
-	newNormal = "green bold"
-	newHighlight = "green bold 22"
+	new = green
+
 [color "branch"]
 	current = yellow reverse
 	local = yellow
 	remote = green
+
 [color "status"]
 	added = yellow
 	changed = green

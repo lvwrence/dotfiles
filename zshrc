@@ -17,10 +17,10 @@ disable log
 # Path stuff
 export PATH=$HOME/dotfiles/bin:$PATH
 export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share
-export PATH=$PATH:$HOME/caffe/build/tools
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/dev/go/bin
 export PATH=$PATH:/usr/local/m-cli
+export PATH=$PATH:$HOME/dev/depot_tools
 
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export PATH="$HOME/.linuxbrew/share:$PATH"
@@ -70,5 +70,6 @@ autoload -Uz compinit
 source ~/dotfiles/aliases
 
 export ALLOW_DIRTY=1
+force_color_prompt=yes
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
