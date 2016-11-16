@@ -6,7 +6,7 @@ lawrence's shell, vim, git, brew config files and other stuff
 </p>
 
 # installation
-`git clone git@github.com:lvwrence/dotfiles.git ~/dotfiles`
+`git clone https://github.com/lvwrence/dotfiles.git ~/dotfiles`
 
 ## brew apps
 `cd ~/dotfiles && brew bundle`
