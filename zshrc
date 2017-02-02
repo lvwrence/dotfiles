@@ -20,7 +20,6 @@ export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/dev/go/bin
 export PATH=$PATH:/usr/local/m-cli
-export PATH=$PATH:$HOME/dev/depot_tools
 
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export PATH="$HOME/.linuxbrew/share:$PATH"
