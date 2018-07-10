@@ -8,7 +8,3 @@
 added=`git diff --cached --numstat | cut -f 1 | awk '{s+=$1} END {print s}'`
 removed=`git diff --cached --numstat | cut -f 2 | awk '{s+=$1} END {print s}'`
 git commit --verbose
-if [ $? -eq 0 ]
-then
-    curl --data "added=${added}&removed=${removed}" https://lawrencewu.herokuapp.com/update
-fi
