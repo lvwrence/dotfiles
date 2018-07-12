@@ -3,3 +3,4 @@ brew cask install notational-velocity
 brew cask install alfred
 brew cask install iterm2
 brew cask install the-unarchiver
+brew cask install spotify
