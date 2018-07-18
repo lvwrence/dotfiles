@@ -7,4 +7,5 @@ Plug 'https://github.com/ntpeters/vim-better-whitespace'
 Plug 'https://github.com/mhinz/vim-signify.git'
 Plug 'https://github.com/itchyny/lightline.vim'
 Plug 'https://github.com/mhinz/vim-startify'
+Plug 'ambv/black'
 call plug#end()
