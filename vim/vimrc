@@ -1,3 +1,8 @@
+" https://github.com/vim/vim/issues/3117#issuecomment-402622616
+if has('python3')
+  silent! python3 1
+endif
+
 set nocompatible " Use Vim settings rather than Vi settings.
 let mapleader = "," " Set leader key to comma.
 
