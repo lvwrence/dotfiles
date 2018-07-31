@@ -17,28 +17,11 @@ disable log
 # Path stuff
 export PATH=$HOME/dotfiles/bin:$PATH
 export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share
-export PATH=$PATH:$HOME/bin
-export PATH=$PATH:$HOME/dev/go/bin
-export PATH=$PATH:/usr/local/m-cli
-
-export PATH="$HOME/.linuxbrew/bin:$PATH"
-export PATH="$HOME/.linuxbrew/share:$PATH"
-export PATH="$HOME/.gem/ruby/2.0.0/bin:$PATH"
-export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
-export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
+export PATH="/home/lawrence/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/lib
-export PYTHONPATH=/nail/home/lawrence/caffe/python:$PYTHONPATH
-export PYTHONPATH=~/caffe/python:$PYTHONPATH
-export PYTHONPATH=~/photo_classification:$PYTHONPATH
-
-export SPARK_HOME=/nail/home/lawrence/spark-1.4.1-bin-hadoop2.6
-export PYTHONPATH=$SPARK_HOME/python:$SPARK_HOME/python/build:$PYTHONPATH
-export PYTHONPATH=$SPARK_HOME/python/lib/py4j-0.8.2.1-src.zip:$PYTHONPATH
-export NVM_DIR=~/.nvm
-. $(brew --prefix nvm)/nvm.sh
-
-export GOPATH=~/dev/go
 
 # plugins
 source <(antibody init)
