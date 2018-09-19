@@ -21,10 +21,6 @@ let g:startify_bookmarks = [
             \ { 'd': '~/dev/dishh' },
             \ ]
 
-let g:startify_custom_header = ['', "   You are " . string((strftime('%s') - 781315200) / 31540000.0) . " years old. Do more.", '']
-let g:startify_custom_footer = ['', "   Action is the foundational key to all success.", '']
-
-
 hi StartifyBracket ctermfg=240
 hi StartifyFile    ctermfg=147
 hi StartifyFooter  ctermfg=240
