@@ -27,5 +27,4 @@ alias gun='gunicorn app:app'
 alias v='source venv/bin/activate'
 alias freeze='pip freeze > requirements.txt'
 
-alias basketball='cd ~/Dropbox/dev/basketball'
-alias eidetic='cd ~/dev/go/src/github.com/heroku/go-getting-started'
+alias sshone='ssh lawrencewu-onebox.dev.lyft.net'

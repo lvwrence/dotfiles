@@ -6,3 +6,4 @@ brew cask install the-unarchiver
 brew cask install spotify
 brew cask install swinsian
 brew cask install soulseek
+brew cask install postman

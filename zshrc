@@ -20,6 +20,17 @@ export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/
 export PATH="/home/lawrence/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/dev/go/bin
+export PATH=$PATH:/usr/local/m-cli
+export PYENV_ROOT=$HOME/.pyenv
+export PATH=$PATH:$PYENV_ROOT/bin
+
+export PATH="$HOME/.linuxbrew/bin:$PATH"
+export PATH="$HOME/.linuxbrew/share:$PATH"
+export PATH="$HOME/.gem/ruby/2.0.0/bin:$PATH"
+export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/lib
 
@@ -55,3 +66,16 @@ export ALLOW_DIRTY=1
 force_color_prompt=yes
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+source '/Users/lawrencewu/src/awsaccess/awsaccess2.sh' # awsaccess
+export PS1="\$(ps1_mfa_context)$PS1" # awsaccess
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/lawrencewu/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/lawrencewu/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/lawrencewu/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/lawrencewu/google-cloud-sdk/completion.zsh.inc'; fi
+source '/Users/lawrencewu/src/blessclient/lyftprofile' # bless ssh alias
+
