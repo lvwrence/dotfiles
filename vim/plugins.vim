@@ -8,4 +8,5 @@ Plug 'https://github.com/mhinz/vim-signify.git'
 Plug 'https://github.com/itchyny/lightline.vim'
 Plug 'https://github.com/mhinz/vim-startify'
 Plug 'https://github.com/pangloss/vim-javascript'
+Plug 'https://github.com/posva/vim-vue'
 call plug#end()
