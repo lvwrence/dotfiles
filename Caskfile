@@ -7,3 +7,5 @@ brew cask install spotify
 brew cask install swinsian
 brew cask install soulseek
 brew cask install postman
+brew cask install postgres
+brew cask install notion
