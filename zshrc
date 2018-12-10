@@ -77,5 +77,5 @@ if [ -f '/Users/lawrencewu/google-cloud-sdk/path.zsh.inc' ]; then source '/Users
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/lawrencewu/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/lawrencewu/google-cloud-sdk/completion.zsh.inc'; fi
-source '/Users/lawrencewu/src/blessclient/lyftprofile' # bless ssh alias
 
+source '/Users/lawrencewu/src/blessclient/lyftprofile' # bless ssh alias
