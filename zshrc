@@ -41,10 +41,10 @@ source <(antibody init)
 antibody bundle djui/alias-tips
 antibody bundle mafredri/zsh-async
 antibody bundle sindresorhus/pure
-antibody bundle zsh-users/zsh-syntax-highlighting
 antibody bundle zsh-users/zsh-completions
 antibody bundle zdharma/fast-syntax-highlighting
 antibody bundle robbyrussell/oh-my-zsh path:plugins/gitfast
+antibody bundle peterhurford/git-it-on.zsh
 
 # bindings
 bindkey '^[[A' up-line-or-search
