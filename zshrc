@@ -42,13 +42,14 @@ compinit
 # plugins (eventually move this out probably)
 zplug "djui/alias-tips"
 zplug "mafredri/zsh-async"
-zplug "sindresorhus/pure"
 zplug "zsh-users/zsh-completions"
 zplug "zdharma/fast-syntax-highlighting"
 zplug "plugins/gitfast", from:oh-my-zsh
 zplug "plugins/colorize", from:oh-my-zsh
 zplug "peterhurford/git-it-on.zsh"
 zplug "LockonS/host-switch"
+setopt prompt_subst # Make sure prompt is able to be generated properly.
+zplug "caiogondim/bullet-train.zsh", use:bullet-train.zsh-theme, defer:3 # defer until other plugins like oh-my-zsh is loaded
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
@@ -59,7 +60,7 @@ if ! zplug check --verbose; then
 fi
 
 # Then, source plugins and add commands to $PATH
-zplug load --verbose
+zplug load
 
 # bindings
 bindkey '^[[A' up-line-or-search
