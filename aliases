@@ -5,6 +5,7 @@ elif [ "$(expr substr $(uname -s) 1 5)" '==' "Linux" ]; then
 fi
 
 alias weather='weather -hide-icon'
+alias matrix='cmatrix'
 
 alias p='python'
 alias l='ls -laxoh'

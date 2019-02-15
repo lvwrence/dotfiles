@@ -44,7 +44,10 @@ antibody bundle sindresorhus/pure
 antibody bundle zsh-users/zsh-completions
 antibody bundle zdharma/fast-syntax-highlighting
 antibody bundle robbyrussell/oh-my-zsh path:plugins/gitfast
+antibody bundle robbyrussell/oh-my-zsh path:plugins/colorize
+antibody bundle robbyrussell/oh-my-zsh path:plugins/heroku
 antibody bundle peterhurford/git-it-on.zsh
+antibody bundle LockonS/host-switch
 
 # bindings
 bindkey '^[[A' up-line-or-search
