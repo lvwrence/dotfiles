@@ -33,6 +33,9 @@ export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/lib
 
+autoload -Uz compinit
+compinit
+
 # plugins
 source <(antibody init)
 antibody bundle djui/alias-tips
@@ -41,6 +44,7 @@ antibody bundle sindresorhus/pure
 antibody bundle zsh-users/zsh-syntax-highlighting
 antibody bundle zsh-users/zsh-completions
 antibody bundle zdharma/fast-syntax-highlighting
+antibody bundle robbyrussell/oh-my-zsh path:plugins/gitfast
 
 # bindings
 bindkey '^[[A' up-line-or-search
@@ -57,7 +61,6 @@ zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %
 zstyle ':completion:*' verbose true
 zstyle :compinstall filename '/Users/lawrence/.zshrc'
 
-autoload -Uz compinit
 # End of lines added by compinstall
 
 source ~/dotfiles/aliases
