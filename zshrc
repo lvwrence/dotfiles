@@ -1,3 +1,7 @@
+# don't nice background tasks
+setopt NO_BG_NICE
+setopt NO_HUP
+setopt NO_BEEP
 # number of lines kept in history
 export HISTSIZE=1000000
 # number of lines saved in the history after logout
@@ -36,6 +40,7 @@ antibody bundle mafredri/zsh-async
 antibody bundle sindresorhus/pure
 antibody bundle zsh-users/zsh-syntax-highlighting
 antibody bundle zsh-users/zsh-completions
+antibody bundle zdharma/fast-syntax-highlighting
 
 # bindings
 bindkey '^[[A' up-line-or-search
