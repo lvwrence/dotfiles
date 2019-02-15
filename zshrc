@@ -17,14 +17,9 @@ disable log
 # Path stuff
 export PATH=$HOME/dotfiles/bin:$PATH
 export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share
-export PATH="/home/lawrence/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/dev/go/bin
 export PATH=$PATH:/usr/local/m-cli
-export PYENV_ROOT=$HOME/.pyenv
-export PATH=$PATH:$PYENV_ROOT/bin
 
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export PATH="$HOME/.linuxbrew/share:$PATH"
@@ -78,4 +73,5 @@ if [ -f '/Users/lawrencewu/google-cloud-sdk/path.zsh.inc' ]; then source '/Users
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/lawrencewu/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/lawrencewu/google-cloud-sdk/completion.zsh.inc'; fi
 
-source '/Users/lawrencewu/src/blessclient/lyftprofile' # bless ssh alias
+# global yarn
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
