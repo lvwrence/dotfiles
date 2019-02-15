@@ -1,3 +1,7 @@
+# don't nice background tasks
+setopt NO_BG_NICE
+setopt NO_HUP
+setopt NO_BEEP
 # number of lines kept in history
 export HISTSIZE=1000000
 # number of lines saved in the history after logout
@@ -17,14 +21,9 @@ disable log
 # Path stuff
 export PATH=$HOME/dotfiles/bin:$PATH
 export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share
-export PATH="/home/lawrence/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/dev/go/bin
 export PATH=$PATH:/usr/local/m-cli
-export PYENV_ROOT=$HOME/.pyenv
-export PATH=$PATH:$PYENV_ROOT/bin
 
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export PATH="$HOME/.linuxbrew/share:$PATH"
@@ -34,13 +33,21 @@ export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/lib
 
+autoload -Uz compinit
+compinit
+
 # plugins
 source <(antibody init)
 antibody bundle djui/alias-tips
 antibody bundle mafredri/zsh-async
 antibody bundle sindresorhus/pure
-antibody bundle zsh-users/zsh-syntax-highlighting
 antibody bundle zsh-users/zsh-completions
+antibody bundle zdharma/fast-syntax-highlighting
+antibody bundle robbyrussell/oh-my-zsh path:plugins/gitfast
+antibody bundle robbyrussell/oh-my-zsh path:plugins/colorize
+antibody bundle robbyrussell/oh-my-zsh path:plugins/heroku
+antibody bundle peterhurford/git-it-on.zsh
+antibody bundle LockonS/host-switch
 
 # bindings
 bindkey '^[[A' up-line-or-search
@@ -57,7 +64,6 @@ zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %
 zstyle ':completion:*' verbose true
 zstyle :compinstall filename '/Users/lawrence/.zshrc'
 
-autoload -Uz compinit
 # End of lines added by compinstall
 
 source ~/dotfiles/aliases
@@ -66,8 +72,6 @@ export ALLOW_DIRTY=1
 force_color_prompt=yes
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-source '/Users/lawrencewu/src/awsaccess/awsaccess2.sh' # awsaccess
-export PS1="\$(ps1_mfa_context)$PS1" # awsaccess
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
@@ -78,4 +82,5 @@ if [ -f '/Users/lawrencewu/google-cloud-sdk/path.zsh.inc' ]; then source '/Users
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/lawrencewu/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/lawrencewu/google-cloud-sdk/completion.zsh.inc'; fi
 
-source '/Users/lawrencewu/src/blessclient/lyftprofile' # bless ssh alias
+# global yarn
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
