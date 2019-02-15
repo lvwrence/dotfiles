@@ -61,8 +61,6 @@ export ALLOW_DIRTY=1
 force_color_prompt=yes
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-source '/Users/lawrencewu/src/awsaccess/awsaccess2.sh' # awsaccess
-export PS1="\$(ps1_mfa_context)$PS1" # awsaccess
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
