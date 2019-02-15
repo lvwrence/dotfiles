@@ -7,3 +7,4 @@ brew install hub
 brew install darksky-weather
 brew install cmatrix
 brew install zplug
+brew install tmux
