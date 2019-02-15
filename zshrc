@@ -33,6 +33,12 @@ export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/lib
 
+export BULLETTRAIN_PROMPT_ORDER=(
+  context
+  dir
+  git
+)
+
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
@@ -42,7 +48,6 @@ compinit
 # plugins (eventually move this out probably)
 zplug "djui/alias-tips"
 zplug "mafredri/zsh-async"
-zplug "zsh-users/zsh-completions"
 zplug "zdharma/fast-syntax-highlighting"
 zplug "plugins/gitfast", from:oh-my-zsh
 zplug "plugins/colorize", from:oh-my-zsh
@@ -97,3 +102,6 @@ if [ -f '/Users/lawrencewu/google-cloud-sdk/completion.zsh.inc' ]; then source '
 
 # global yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# tmux conf
+tmux source-file ~/dotfiles/tmux.conf
