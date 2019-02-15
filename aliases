@@ -11,6 +11,8 @@ alias ..='cd ..'
 alias history='history 1'
 alias hgrep='history | grep'
 alias dgrep='grep -r'
+alias t='tail -f'
+alias zshrc='${=EDITOR} ~/.zshrc' # Quick access to the ~/.zshrc file
 
 alias g='git'
 alias gco='git checkout'
