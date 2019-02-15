@@ -5,3 +5,4 @@ brew install wget
 brew install git
 brew install heroku/brew/heroku
 brew install hub
+brew install darksky-weather

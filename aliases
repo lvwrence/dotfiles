@@ -4,6 +4,8 @@ elif [ "$(expr substr $(uname -s) 1 5)" '==' "Linux" ]; then
     alias ls='ls --color=auto'
 fi
 
+alias weather='weather -hide-icon'
+
 alias p='python'
 alias l='ls -laxoh'
 alias t='tmux'
@@ -14,7 +16,6 @@ alias dgrep='grep -r'
 alias t='tail -f'
 alias zshrc='${=EDITOR} ~/.zshrc' # Quick access to the ~/.zshrc file
 
-alias git='hub'
 alias g='git'
 alias gco='git checkout'
 alias gs='git status'
