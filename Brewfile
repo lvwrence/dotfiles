@@ -1,4 +1,3 @@
-brew install getantibody/tap/antibody
 brew install zsh
 brew install vim
 brew install wget
@@ -7,3 +6,4 @@ brew install heroku/brew/heroku
 brew install hub
 brew install darksky-weather
 brew install cmatrix
+brew install zplug

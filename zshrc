@@ -33,21 +33,33 @@ export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/lib
 
+export ZPLUG_HOME=/usr/local/opt/zplug
+source $ZPLUG_HOME/init.zsh
+
 autoload -Uz compinit
 compinit
 
-# plugins
-source <(antibody init)
-antibody bundle djui/alias-tips
-antibody bundle mafredri/zsh-async
-antibody bundle sindresorhus/pure
-antibody bundle zsh-users/zsh-completions
-antibody bundle zdharma/fast-syntax-highlighting
-antibody bundle robbyrussell/oh-my-zsh path:plugins/gitfast
-antibody bundle robbyrussell/oh-my-zsh path:plugins/colorize
-antibody bundle robbyrussell/oh-my-zsh path:plugins/heroku
-antibody bundle peterhurford/git-it-on.zsh
-antibody bundle LockonS/host-switch
+# plugins (eventually move this out probably)
+zplug "djui/alias-tips"
+zplug "mafredri/zsh-async"
+zplug "sindresorhus/pure"
+zplug "zsh-users/zsh-completions"
+zplug "zdharma/fast-syntax-highlighting"
+zplug "plugins/gitfast", from:oh-my-zsh
+zplug "plugins/colorize", from:oh-my-zsh
+zplug "peterhurford/git-it-on.zsh"
+zplug "LockonS/host-switch"
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+# Then, source plugins and add commands to $PATH
+zplug load --verbose
 
 # bindings
 bindkey '^[[A' up-line-or-search
