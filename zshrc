@@ -34,9 +34,9 @@ export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/lib
 
 export BULLETTRAIN_PROMPT_ORDER=(
-  context
   dir
   git
+  cmd_exec_time
 )
 
 export ZPLUG_HOME=/usr/local/opt/zplug
