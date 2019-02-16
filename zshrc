@@ -1,3 +1,6 @@
+if [[ $TERM == xterm ]]; then
+    TERM=xterm-256color
+fi
 # don't nice background tasks
 setopt NO_BG_NICE
 setopt NO_HUP
@@ -102,6 +105,3 @@ if [ -f '/Users/lawrencewu/google-cloud-sdk/completion.zsh.inc' ]; then source '
 
 # global yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-# tmux conf
-tmux source-file ~/dotfiles/tmux.conf
