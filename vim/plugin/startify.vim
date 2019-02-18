@@ -1,5 +1,10 @@
 autocmd User Startified setlocal cursorline
 
+let g:startify_custom_header =
+      \ 'map(startify#fortune#boxed(), "\"   \".v:val")'
+
+
+
 let g:startify_enable_special         = 0
 let g:startify_files_number           = 8
 let g:startify_relative_path          = 1

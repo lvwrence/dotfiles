@@ -52,7 +52,7 @@ set shiftwidth=4
 set tabstop=4
 
 " Set indentation style for specific languages.
-autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 autocmd FileType c setlocal shiftwidth=8 tabstop=8
 autocmd FileType make setlocal shiftwidth=8 tabstop=8
