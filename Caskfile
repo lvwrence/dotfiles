@@ -9,3 +9,4 @@ brew cask install soulseek
 brew cask install postman
 brew cask install postgres
 brew cask install notion
+brew cask install simplenote
