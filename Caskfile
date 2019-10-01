@@ -10,3 +10,6 @@ brew cask install postman
 brew cask install postgres
 brew cask install notion
 brew cask install focus
+brew cask install sketch
+brew cask install docker
+brew cask install pokerstars

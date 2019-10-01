@@ -8,3 +8,5 @@ brew install darksky-weather
 brew install cmatrix
 brew install zplug
 brew install tmux
+brew install docker
+brew install ruby
