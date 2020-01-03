@@ -12,4 +12,4 @@ brew cask install notion
 brew cask install focus
 brew cask install sketch
 brew cask install docker
-brew cask install pokerstars
+brew cask install mongodb

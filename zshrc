@@ -27,12 +27,7 @@ export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/dev/go/bin
 export PATH=$PATH:/usr/local/m-cli
-
-export PATH="$HOME/.linuxbrew/bin:$PATH"
-export PATH="$HOME/.linuxbrew/share:$PATH"
-export PATH="$HOME/.gem/ruby/2.0.0/bin:$PATH"
-export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
-export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
+export PATH=/usr/local/opt/ruby/bin:$PATH
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/lib
 

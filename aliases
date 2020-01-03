@@ -27,18 +27,4 @@ alias gdc='git diff --cached'
 alias gpo='git push origin HEAD'
 alias gph='git push heroku HEAD'
 
-alias gun='gunicorn app:app'
-alias v='source venv/bin/activate'
-alias freeze='pip freeze > requirements.txt'
-
-alias sshone='ssh lawrencewu-onebox.dev.lyft.net'
-alias smc="~/src/hacktools/sync-to-onebox-v3.sh mapcuration-legacy-lawrencewu"
-alias smcfe="~/src/hacktools/sync-to-onebox-v3.sh mapcurationfe-legacy-lawrencewu"
-alias smi="~/src/hacktools/sync-to-onebox-v3.sh mappinginternal-legacy-lawrencewu"
-alias sf="~/src/hacktools/sync-to-onebox-v3.sh family-legacy-lawrencewu"
-alias sl="~/src/hacktools/sync-to-onebox-v3.sh locations-legacy-lawrencewu"
-alias sp="~/src/hacktools/sync-to-onebox-v3.sh places-legacy-lawrencewu"
-alias srl="~/src/hacktools/sync-to-onebox-v3.sh ridelocations-legacy-lawrencewu"
-alias st="~/src/hacktools/sync-to-onebox-v3.sh tom-legacy-lawrencewu"
-alias sii="~/src/hacktools/sync-to-onebox-v3.sh imageryingest-legacy-lawrencewu"
-alias si="~/src/hacktools/sync-to-onebox-v3.sh images-legacy-lawrencewu"
+alias migrate='sequelize db:drop && sequelize db:create && sequelize db:migrate && sequelize db:seed:all'
