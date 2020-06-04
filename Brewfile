@@ -10,3 +10,4 @@ brew install zplug
 brew install tmux
 brew install docker
 brew install ruby
+brew install redis
