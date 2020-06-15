@@ -28,10 +28,12 @@
 
 # push easily. http://stackoverflow.com/a/23918418/89484
 [push]
-    default = current
+	default = current
 
 [init]
     templatedir = ~/dotfiles/git/template
 [user]
     name = Lawrence Wu
     email = lawrence@lawrencewu.me
+[pull]
+	rebase = false
