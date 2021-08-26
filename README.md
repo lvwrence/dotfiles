@@ -1,5 +1,5 @@
 # dotfiles
-lawrence's shell, vim, git, brew config files and other stuff
+shell, vim, git, brew config files and other stuff
 
 # installation
 `git clone https://github.com/lvwrence/dotfiles.git ~/dotfiles`
