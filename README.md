@@ -19,6 +19,10 @@ install the range mono fonts and use it at 14pt, 1.5 vertical spacing
 ## install tmux config
 `ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf`
 
+`git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+
+`tmux` + `C-a + I`
+
 ## install git config and hooks
 `ln -s ~/dotfiles/git/gitconfig ~/.gitconfig`
 
