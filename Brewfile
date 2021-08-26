@@ -11,3 +11,4 @@ brew install tmux
 brew install docker
 brew install ruby
 brew install redis
+brew install tmuxinator
