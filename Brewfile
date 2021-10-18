@@ -18,4 +18,3 @@ brew install alfred
 brew install spotify
 brew install postgres
 brew install notion
-brew install mongodb
