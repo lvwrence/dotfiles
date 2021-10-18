@@ -18,7 +18,6 @@ alias zshrc='${=EDITOR} ~/.zshrc' # Quick access to the ~/.zshrc file
 
 alias source='source ~/.zshrc'
 alias tsource='tmux source ~/.tmux.conf'
-alias vim='code'
 
 alias g='git'
 alias gco='git checkout'
