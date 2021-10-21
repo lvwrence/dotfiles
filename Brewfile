@@ -21,3 +21,4 @@ brew install notion
 brew install slack
 brew install postgres-unofficial
 brew install ngrok
+brew install transmission

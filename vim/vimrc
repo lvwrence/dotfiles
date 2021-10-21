@@ -53,6 +53,8 @@ set tabstop=4
 
 " Set indentation style for specific languages.
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+autocmd FileType typescript setlocal shiftwidth=2 tabstop=2
+autocmd FileType typescriptreact setlocal shiftwidth=2 tabstop=2
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 autocmd FileType c setlocal shiftwidth=8 tabstop=8
 autocmd FileType make setlocal shiftwidth=8 tabstop=8
