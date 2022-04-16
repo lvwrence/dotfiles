@@ -3,8 +3,6 @@ brew install vim
 brew install wget
 brew install git
 brew tap heroku/brew && brew install heroku
-brew install hub
-brew install darksky-weather
 brew install cmatrix
 brew install zplug
 brew install tmux
