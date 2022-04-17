@@ -22,3 +22,4 @@ brew install ngrok
 brew install transmission
 brew install vlc
 brew install yarn
+brew install node
