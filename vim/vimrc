@@ -11,7 +11,6 @@ syntax enable " Switch syntax highlighting on.
 let g:hybrid_custom_term_colors = 1
 let g:hybrid_reduced_contrast = 1 " Remove this line if using the default palette.
 set background=dark
-colorscheme hybrid_material " Set colorscheme
 
 
 " Options.
@@ -72,3 +71,5 @@ let javaScript_fold=1
 " Load plugins and mappings.
 source ~/dotfiles/vim/mappings.vim
 source ~/dotfiles/vim/plugins.vim
+
+colorscheme tokyonight " Set colorscheme

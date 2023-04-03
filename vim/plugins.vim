@@ -17,6 +17,6 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'tomlion/vim-solidity'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'https://github.com/ruanyl/vim-sort-imports'
-Plug 'wakatime/vim-wakatime'
 Plug 'github/copilot.vim'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 call plug#end()
