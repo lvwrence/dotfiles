@@ -28,6 +28,7 @@ install the range mono fonts and use it at 14pt, 1.5 vertical spacing
 
 ## install vim config
 `ln -s ~/dotfiles/vim ~/.vim`
+`ln -s ~/dotfiles/vim ~/.config/nvim/init.vim`
 
 `vim +PlugInstall +qall`
 
