@@ -11,10 +11,10 @@ shell, vim, git, brew config files and other stuff
 `chsh -s /bin/zsh`
 `ln -s ~/dotfiles/zshrc ~/.zshrc`
 
-## install iterm theme
-install the iterm theme under iterm/
+## install powerline fonts
 
-install the range mono fonts and use it at 14pt, 1.5 vertical spacing
+`./fonts.sh` + choose a patched font in iterm
+
 
 ## install tmux config
 `ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf`
@@ -27,8 +27,6 @@ install the range mono fonts and use it at 14pt, 1.5 vertical spacing
 `ln -s ~/dotfiles/git/gitconfig ~/.gitconfig`
 
 ## install vim config
-`ln -s ~/dotfiles/vim ~/.vim`
-
 `ln -s ~/dotfiles/vim/vimrc ~/.config/nvim/init.vim`
 
 `vim +PlugInstall +qall`
