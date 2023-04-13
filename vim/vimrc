@@ -72,4 +72,4 @@ let javaScript_fold=1
 source ~/dotfiles/vim/mappings.vim
 source ~/dotfiles/vim/plugins.vim
 
-colorscheme tokyonight " Set colorscheme
+colorscheme NeoSolarized

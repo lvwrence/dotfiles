@@ -19,4 +19,5 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'https://github.com/ruanyl/vim-sort-imports'
 Plug 'github/copilot.vim'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'overcache/NeoSolarized'
 call plug#end()
