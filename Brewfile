@@ -11,8 +11,6 @@ brew install ruby
 brew install redis
 brew install tmuxinator
 
-brew install sizeup
-brew install alfred
 brew install spotify
 brew install postgres
 brew install notion
@@ -23,3 +21,4 @@ brew install transmission
 brew install vlc
 brew install yarn
 brew install node
+brew install --cask raycast
