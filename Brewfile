@@ -23,3 +23,5 @@ brew install yarn
 brew install node
 brew install --cask raycast
 brew install --cask iterm2
+brew install neovim
+brew install discord
