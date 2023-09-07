@@ -22,3 +22,4 @@ brew install vlc
 brew install yarn
 brew install node
 brew install --cask raycast
+brew install --cask iterm2
