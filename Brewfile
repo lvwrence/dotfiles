@@ -27,3 +27,4 @@ brew install --cask 1password
 brew install --cask telegram
 brew install --cask figma
 brew install fastlane
+brew install cocoapods
