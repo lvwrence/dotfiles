@@ -22,3 +22,4 @@ brew install --cask iterm2
 brew install neovim
 brew install discord
 brew install --cask visual-studio-code
+brew install --cask google-chrome
