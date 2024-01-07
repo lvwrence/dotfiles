@@ -11,7 +11,7 @@ syntax enable " Switch syntax highlighting on.
 let g:hybrid_custom_term_colors = 1
 let g:hybrid_reduced_contrast = 1 " Remove this line if using the default palette.
 set background=dark
-
+set termguicolors
 
 " Options.
 set wildignore=*.swp,*.bak,*.pyc,*.class,*.p,*~ " Ignore compiled files and other unnecessary stuff
